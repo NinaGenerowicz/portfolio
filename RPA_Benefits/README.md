@@ -31,7 +31,7 @@
 
 This dashboard provides an overview of RPA performance, including the number processed cases, exception rates, and status ratio between processes.
 
-![RPA_Benefits](screenshots/RPA_Benefit_Tracker_Summary.png)
+![Main Dashboard](media/RPA_Benefit_Tracker_Summary.png)
 
 ### 🔄 Filters and Interactivity
 
@@ -39,12 +39,17 @@ Users can filter data by:
 - **Process Name** – View performance metrics for individual automated processes
 - **Date Range** – Analyze automation trends over specific time ranges
 
-![Filters](screenshots/filters_demo.gif)
-
 ### 📊 Savings Analysis
 
 This visualization presents the estimated savings of manual work - by Process Name **or** by Time. Based on this, Manager is able to calculate concrete financial savings.
 
-![Savings](screenshots/savings_chart.png)
+![Savings](media/RPA_Benefit_Tracker_Savings.gif)
 
+---
+
+## 📊 Summary
+
+- **What does the report show?** The dashboard provides insights into RPA efficiency, reliability, and impact on business operations.
+- **What problems does it solve?** It helps stakeholders assess automation performance, identify high-exception processes, and measure cost reductions.
+- **What could be improved?** Future enhancements could include real-time data updates and direct integration with the automation tool.
 ---
