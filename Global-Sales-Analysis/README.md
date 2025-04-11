@@ -2,11 +2,12 @@
 
 This Power BI report visualizes and compares **online vs. in-store sales performance** across different countries and continents. It integrates KPIs, trendlines, geographical insights, and return rate analytics to help stakeholders understand global sales activity and performance against targets.
 
+![Dashboard Preview](media/Global_Sales_Analysis_main.png)
 ---
 
 ## 📊 Key Features
 
-- 💼 Dark theme executive dashboard
+- 🌙 Dark theme executive dashboard
 - 🛍️ Sales channel comparison (Online vs. In-Store)
 - 📈 Year-over-year tracking for Net Sales and Return Rate
 - 🎯 Performance vs. Quarterly Targets
@@ -29,7 +30,7 @@ Simulated data includes over 1,000+ records across 2 years, covering:
 🔁 Data Source Simulation (ERP + Workflow)
 This dashboard was built using simulated ERP data generated and managed through:
 - 📋 SharePoint Lists – representing the ERP system's order and target records
-- ⚙️ Power Automate flows – automating:
+- 🤖 Power Automate flows – automating:
   - Order generation
   - Flagging of urgent or high-value orders
   - Triggering survey forms (MS Forms)
