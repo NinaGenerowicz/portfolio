@@ -2,7 +2,7 @@
 
 This Power BI report visualizes and compares **online vs. in-store sales performance** across different countries and continents. It integrates KPIs, trendlines, geographical insights, and return rate analytics to help stakeholders understand global sales activity and performance against targets.
 
-![Dashboard Preview](media/Global_Sales_Analysis_main.png)
+
 ---
 
 ## 📊 Key Features
