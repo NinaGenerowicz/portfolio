@@ -12,14 +12,13 @@ I enjoy bridging the gap between data, automation, and business needs, ensuring 
 
 ---
 
-## 📊 My Work  
+## 📊🤖 My Work  
 - 🔹 **Power BI Dashboards & Reports** – Designed for different industries, showcasing automation benefits, financial insights, and operational efficiency.  
 - 🔹 **Process Documentation & Design** – Experience in writing **Process Design Documents (PDDs)**, working with business stakeholders, and improving workflows.  
 - 🔹 **Automation & RPA** – Experience in projects with **Blue Prism** and **Power Automate**. 
 
-## 🛠️ Skill & Certification  
+## 🧰 Skill & Certification  
 - ✨ Microsoft Certified: Power BI Data Analyst Associate
 - ✨ Power BI (DAX, M Query, Data Modeling)  
 - ✨ Basic Power Apps & Power Automate 
-- ✨ Microsoft Visio (Process Mapping)
-- ✨ Professional Scrum Product Owner and Scrum Master
+- ✨ Mirofessional Scrum Product Owner and Scrum Master
