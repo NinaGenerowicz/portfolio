@@ -168,4 +168,10 @@ This page turns raw survey data into **actionable business insights**, allowing 
 
 ![Dashboard Preview](media/MS_Forms_Survey.gif)
 
+---
+
+### 🛝 Basic Power Automate Flows used for mock data collection
+
+![Dashboard Preview](media/Urgency_flag.png)
+
 ![Dashboard Preview](media/Flow.png)
