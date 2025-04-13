@@ -3,6 +3,9 @@
 This Power BI report visualizes and compares **online vs. in-store sales performance** across different countries and continents. It integrates KPIs, trendlines, geographical insights, and return rate analytics to help stakeholders understand global sales activity and performance against targets.
 
 ![Dashboard Preview](media/Global_Sales_Analysis.png)
+
+
+![Dashboard Preview](media/Mobile.png)
 ---
 
 ## 📊 Key Features
@@ -15,6 +18,7 @@ This Power BI report visualizes and compares **online vs. in-store sales perform
 - 🌍 Geographical map of sales locations
 - 📉 Sales vs. Discount trends (dual-axis chart)
 - 🎨 Modern layout and clean UI
+- 📱 Mobile version 
 
 ---
 
@@ -107,3 +111,57 @@ These components allowed realistic end-to-end business flow simulation, from ord
 - Time-based trend comparison
 - Channel performance analysis
 
+## 📝 Survey Results Page – Voice of the Customer
+
+This page captures and visualizes feedback from customers based on survey responses collected through **Microsoft Forms** and stored in a **SharePoint List**, with automation powered by **Power Automate**.
+
+The goal is to provide a **holistic view of customer sentiment** by linking feedback directly to sales performance, orders, and products.
+
+![Dashboard Preview](media/Survey_Responses.png)
+---
+
+### 🎯 Key Features
+
+- 🔁 **% Online Response Rate**  
+  Displays the percentage of online orders that received a customer survey response, with a dynamic reference label showing the actual number of responses vs. orders. Colored indicators reflect thresholds (e.g., red if <70%).
+
+- 🌟 **Customer Satisfaction + Value for Money**  
+  Two donut charts break down customer ratings by satisfaction level and perceived value, clearly showing proportions of very/extremely satisfied customers.
+
+- 💬 **Source of Feedback**  
+  A horizontal bar chart showing where customers heard about the company (e.g., Social Media, Friends, Search).
+
+- 📈 **% Satisfied vs. Order Value**  
+  A scatter chart comparing satisfaction levels, unit price, and value-for-money perception — revealing hidden insights into customer perception based on price tiers.
+
+- 🗺️ **Country Ranking**  
+  A ranked table of countries based on average recommendation score, pulled using a relationship between `Survey_Responses` and `All_Sales` via `Order ID`.
+
+- 🛍️ **Product-Level Satisfaction**  
+  Table comparing average recommendation score and quantity sold across top products. Downward-pointing red arrows help flag products with underperforming sentiment.
+
+- 📊 **Survey KPIs**  
+  - **Average Recommendation Score**  
+  - **% Very or Extremely Satisfied**  
+  - **Total Number of Responses**
+
+---
+
+### 🧠 Techniques Used
+
+- Complex DAX logic using `FILTER`, `SELECTCOLUMNS`, and `IN` to match survey responses to online orders  
+- Unicode formatting (`UNICHAR`) for custom card reference labels (with arrows and dynamic colors)  
+- Relationships between `Survey_Responses` and `All_Sales` via `Order ID` to enable geographic and product analysis  
+- Conditional formatting for flags and arrows  
+- Modern layout with donut charts, scatter visuals, KPI cards, and sleek dark theme
+
+---
+
+### 📌 Business Value
+
+This page turns raw survey data into **actionable business insights**, allowing the company to:
+
+- Identify satisfaction trends by product and region  
+- Spot underperforming customer experiences early  
+- Optimize marketing strategies based on source attribution  
+- Align product pricing and value perceptions
