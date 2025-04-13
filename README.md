@@ -8,8 +8,9 @@ I'm a **Power BI Developer** and **RPA Analyst** with a strong background in dat
 - 🔹 **Microsoft Visio** – Mapping out business processes and automation flows.  
 - 🔹 **Power Platform** – Creating **Power Apps** for simple business applications and designing basic **Power Automate** workflows for process automation.  
 
-I enjoy bridging the gap between data, automation, and business needs, ensuring that solutions are both efficient and user-friendly.  
+🧠 In addition to the examples featured in this portfolio, I’ve developed a wide range of dashboards across different business functions. These have included solutions for **HR** teams tracking performance and compliance-related tasks, **operational** dashboards supporting invoice and vendor master data processes, as well as monitoring tools for **error logs and exception handling.** While these projects aren’t publicly shareable, they reflect the same principles of clarity, automation-awareness, and business impact found in my portfolio work.
 
+These dashboards focused on process visibility, exception handling, data accuracy, and operational efficiency — all designed with business users in mind.
 ---
 
 ## 📊🤖 My Work  
