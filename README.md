@@ -22,3 +22,8 @@ I enjoy bridging the gap between data, automation, and business needs, ensuring 
 - ✨ Power BI (DAX, M Query, Data Modeling)  
 - ✨ Basic Power Apps & Power Automate 
 - ✨ Mirofessional Scrum Product Owner and Scrum Master
+
+## ⚡Recent Uploads
+- 🟢 **Global Sales Analysis Dashboard** - End-to-end project simulating an ERP system using **SharePoint Lists** and **Power Automate.** Includes sales KPIs, urgent order flags, connected **MS Form** survey responses to order data to visualize satisfaction trends, return behavior, and product sentiment. Built a dark-themed, executive-style dashboard with dynamic cards, scatter plots, and geolocation mapping. View [project here](./Global_Sales_Analysis)
+
+- 🟢 **RPA Benefits** - This dashboard is great for presenting RPA program outcomes to both technical stakeholders and business decision-makers. View [project here](./RPA_Benefits)
