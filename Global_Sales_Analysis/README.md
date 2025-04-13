@@ -165,3 +165,7 @@ This page turns raw survey data into **actionable business insights**, allowing 
 - Spot underperforming customer experiences early  
 - Optimize marketing strategies based on source attribution  
 - Align product pricing and value perceptions
+
+![Dashboard Preview](media/MS_Forms_Survey.gif)
+
+![Dashboard Preview](media/Flow.png)
