@@ -27,4 +27,6 @@ These dashboards focused on process visibility, exception handling, data accurac
 ## ⚡Recent Uploads
 - 🟢 **Global Sales Analysis Dashboard** - End-to-end project simulating an ERP system using **SharePoint Lists** and **Power Automate.** Includes sales KPIs, urgent order flags, connected **MS Form** survey responses to order data to visualize satisfaction trends, return behavior, and product sentiment. Built a dark-themed, executive-style dashboard with dynamic cards, scatter plots, and geolocation mapping. View [project here](./Global_Sales_Analysis)
 
-- 🟢 **RPA Benefits** - This dashboard is great for presenting RPA program outcomes to both technical stakeholders and business decision-makers. View [project here](./RPA_Benefits)
+- 🟢 **RPA Benefits** - This dashboard is great for presenting **RPA program outcomes** to both technical stakeholders and business decision-makers. View [project here](./RPA_Benefits)
+  
+- 🟢 **Expenses App** - This mobile-friendly **Power Apps** application allows employees to log, categorize, and submit business expenses for manager approval. The app supports common use cases such as travel, internet, and meal reimbursements, and integrates with Power Automate for approval routing. View [project here](./Expenses_App)
