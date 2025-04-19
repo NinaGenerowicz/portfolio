@@ -6,7 +6,7 @@ This Power BI dashboard showcases a luxury wellness center’s customer analytic
 
 ## 🧘🏼‍♀️ Client Overview
 
-> ![Client Overview](media/client-overview.png)
+![Client Overview](media/ClientOverview.png)
 
 This page provides a detailed snapshot of the client base, capturing demographic patterns, acquisition insights, and registration progress. It helps stakeholders understand who their clients are, how they’re engaging, and how the wellness brand is growing.
 
@@ -14,7 +14,7 @@ This page provides a detailed snapshot of the client base, capturing demographic
 - **Total Clients Count**
 - **% Registered Clients**
 - **Active Clients Count**
-- **Average Tenure**
+- **Average Tenure (Months)**
 - **Client Retention Rate**
 - **Average Age**
 
@@ -30,7 +30,7 @@ This page provides a detailed snapshot of the client base, capturing demographic
 
 ## 💰 Financial Performance
 
-> ![Financial Performance](media/financial-performance.png)
+![Financial Performance](media/FinancialPerformance.png)
 
 This page focuses on revenue and order trends across the center’s service lines, cities, and promotions. It compares discounted earnings with potential full-price revenue to understand pricing strategy effectiveness.
 
@@ -54,7 +54,7 @@ This page focuses on revenue and order trends across the center’s service line
 
 ## 🌿 Services & Retention
 
-> ![Services and Retention](media/services-retention.png)
+![Services and Retention](media/Services&Retention.png)
 
 This page focuses on product and service performance as well as customer loyalty. It connects satisfaction with order behavior and registration, highlighting what keeps clients coming back.
 
@@ -70,3 +70,7 @@ This page focuses on product and service performance as well as customer loyalty
 - **Client Quote**: Carousel with real-like testimonials for added human touch
 
 📌 *Supports product decisions, pricing refinement, and loyalty program strategies.*
+
+---
+
+![Services and Retention](media/Wellness_Center.gif)
