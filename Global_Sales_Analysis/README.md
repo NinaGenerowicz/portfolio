@@ -1,6 +1,6 @@
 # 🌍 Global Sales Analysis Dashboard
 
-This Power BI report visualizes and compares **online vs. in-store sales performance** across different countries and continents. It integrates KPIs, trendlines, geographical insights, and return rate analytics to help stakeholders understand global sales activity and performance against targets.
+This project showcases a scalable Power BI solution to analyze **global sales performance** across online and in-store channels. It integrates KPIs, geospatial insights, return behavior, and survey feedback — all powered by simulated ERP and survey data automated via Power Automate.
 
 ![Dashboard Preview](media/Global_Sales_Analysis.png)
 
@@ -8,63 +8,50 @@ This Power BI report visualizes and compares **online vs. in-store sales perform
 ![Dashboard Preview](media/Mobile.png)
 ---
 
-## 📊 Key Features
+## ⚙️ Technical Summary
 
-- 🌙 Dark theme executive dashboard
-- 🛍️ Sales channel comparison (Online vs. In-Store)
-- 📈 Year-over-year tracking for Net Sales and Return Rate
-- 🎯 Performance vs. Quarterly Targets
-- 🔎 Dynamic filtering by Continent, Date, and Channel
-- 🌍 Geographical map of sales locations
-- 📉 Sales vs. Discount trends (dual-axis chart)
-- 🎨 Modern layout and clean UI
-- 📱 Mobile version 
-
+- **Data Sources**: Mock ERP data generated via SharePoint Lists and Power Automate; survey feedback collected through Microsoft Forms and stored in SharePoint
+- **Data Modeling**:
+  - Star schema with fact tables: `Sales_Orders`, `Survey_Responses`
+  - Dimensional tables: `Date`, `Location`, `Product`, `Channel`, `Target_2025`
+  - Relationships managed via Order ID, Product, and Date
+- **Power Query**:
+  - Combined order, discount, and return logic
+  - Normalized date types, percent formats, and location fields
+- **DAX Measures**:
+  - `Net Sales`, `YTD Sales`, `Return Rate`, `Sales vs Target`
+  - Channel breakdowns: `% Online Sales`, `% In-Store Sales`
+  - LY comparisons using `SAMEPERIODLASTYEAR` and dynamic % change logic
+- **Automated Flow Simulation** (Power Automate):
+  - Order creation simulation
+  - Urgency flag logic based on high-value orders
+  - Triggered survey dispatch after online purchases
+- **UX Enhancements**:
+  - Custom cards with dynamic labels
+  - Dark theme layout for executive consumption
+  - Mobile-optimized version
+    
 ---
 
-## 📁 Dataset Overview
-
-Simulated data includes over 1,000+ records across 2 years, covering:
-
-- Orders placed via online and in-store channels
-- Product discounts, quantities, and returns
-- Country, region, and continent location data
-- Quarterly and yearly sales targets
-
-🔁 Data Source Simulation (ERP + Workflow)
-This dashboard was built using simulated ERP data generated and managed through:
-- 📋 SharePoint Lists – representing the ERP system's order and target records
-- 🤖 Power Automate flows – automating:
-  - Order generation
-  - Flagging of urgent or high-value orders
-  - Triggering survey forms (MS Forms)
-  - Pushing updates to downstream Power BI datasets
-
-These components allowed realistic end-to-end business flow simulation, from order entry to real-time reporting — perfect for showcasing automation, analytics, and dashboarding all in one project.
-
----
-
-## 💡 Insights Delivered
-
-- Trends in online vs. in-store sales performance
-- Progress toward quarterly and annual targets
-- Return rate behavior compared to last year
-- Top-performing countries by order count and revenue
-- Global footprint visualized using Azure Maps
-- Discount impact on net sales over time
-
----
-
+## Dashboard Pages
 ### **Global Sales Analysis**
 
-- 🔹 KPIs: YTD Sales, Net Sales, Return Rate
-- 🔹 % Change vs. Last Year (color-coded)
-- 🔹 Donut Chart: % of Online vs. In-Store Sales
-- 🔹 Line/Area Chart: Net Sales by Month and Channel
-- 🔹 Horizontal Bar: Orders by Country and Channel
-- 🔹 Line Chart: Net Sales vs. Total Discounts
-- 🔹 Card: Current Quarter Sales vs. Target (with %)
-- 🔹 Map: Sales intensity and store locations
+> Tracks channel performance, revenue growth, and progress toward quarterly targets.
+
+**Visuals**:
+- KPI Cards: `YTD Net Sales`, `Return Rate`, `Sales vs Target`
+- Donut Chart: Online vs In-Store split
+- Area Chart: Net Sales trend by channel
+- Horizontal Bar: Country-level order volume
+- Line Chart: Net Sales vs Total Discounts
+- Azure Maps: Global sales footprint
+- Card with % progress toward current quarter target
+
+**Built With**:
+- Date table for YTD and time intelligence
+- DAX: `Sales LY`, `% Change`, `Return Rate = Returned ÷ Total`
+- Geo-coding from `Location` dimension
+- Custom card visuals using `UNICHAR(160)` and `UNICHAR(8195)` for spacing
 
 ---
 
@@ -92,80 +79,67 @@ These components allowed realistic end-to-end business flow simulation, from ord
 
 ---
 
-## 🧪 Techniques Used
-
-- DAX: moving average, % of total, year-over-year growth
-- Layout design with balance and dark theme polish
-- Custom card visuals using `UNICHAR(160)` and `UNICHAR(8195)` for spacing
-- Tooltip configuration and slicer interactivity
-- Geo-visualization using Azure Maps
-
----
-
-## 🚀 Skills Demonstrated
-
-- Power BI report building and storytelling
-- KPI design and dynamic target tracking
-- Sales performance analysis
-- Visual best practices for executive dashboards
-- Time-based trend comparison
-- Channel performance analysis
-
 ## 📝 Survey Results Page – Voice of the Customer
 
 This page captures and visualizes feedback from customers based on survey responses collected through **Microsoft Forms** and stored in a **SharePoint List**, with automation powered by **Power Automate**.
 
-The goal is to provide a **holistic view of customer sentiment** by linking feedback directly to sales performance, orders, and products.
+> Visualizes customer sentiment data linked directly to sales and products.
 
 ![Dashboard Preview](media/Survey_Responses.png)
 ---
 
-### 🎯 Key Features
+**Data Join**:
+- Linked `Survey_Responses` to `Sales_Orders` via `Order ID`
+- Enabled geographic and product-level sentiment breakdowns
 
-- 🔁 **% Online Response Rate**  
-  Displays the percentage of online orders that received a customer survey response, with a dynamic reference label showing the actual number of responses vs. orders. Colored indicators reflect thresholds (e.g., red if <70%).
+**Visuals**:
+- % Online Orders with Survey (dynamic KPI)
+- Donuts: Satisfaction and Value Perception
+- Bar: Feedback Source (Social, Friends, Search)
+- Scatter: % Satisfied vs Order Value
+- Country Ranking Table: Avg. Recommendation Score
+- Product Sentiment Table: Avg Score, Qty Sold, Flags
 
-- 🌟 **Customer Satisfaction + Value for Money**  
-  Two donut charts break down customer ratings by satisfaction level and perceived value, clearly showing proportions of very/extremely satisfied customers.
-
-- 💬 **Source of Feedback**  
-  A horizontal bar chart showing where customers heard about the company (e.g., Social Media, Friends, Search).
-
-- 📈 **% Satisfied vs. Order Value**  
-  A scatter chart comparing satisfaction levels, unit price, and value-for-money perception — revealing hidden insights into customer perception based on price tiers.
-
-- 🗺️ **Country Ranking**  
-  A ranked table of countries based on average recommendation score, pulled using a relationship between `Survey_Responses` and `All_Sales` via `Order ID`.
-
-- 🛍️ **Product-Level Satisfaction**  
-  Table comparing average recommendation score and quantity sold across top products. Downward-pointing red arrows help flag products with underperforming sentiment.
-
-- 📊 **Survey KPIs**  
-  - **Average Recommendation Score**  
-  - **% Very or Extremely Satisfied**  
-  - **Total Number of Responses**
+**Tech Highlights**:
+- DAX: `SELECTCOLUMNS`, `FILTER`, `IN` for linking responses
+- Unicode-based KPIs with arrows and dynamic labels
+- Conditional formatting on tables (red arrows for low sentiment)
+- SharePoint integration for live survey ingestion
 
 ---
 
-### 🧠 Techniques Used
+## 🛠 Techniques Used
 
-- Complex DAX logic using `FILTER`, `SELECTCOLUMNS`, and `IN` to match survey responses to online orders  
-- Unicode formatting (`UNICHAR`) for custom card reference labels (with arrows and dynamic colors)  
-- Relationships between `Survey_Responses` and `All_Sales` via `Order ID` to enable geographic and product analysis  
-- Conditional formatting for flags and arrows  
-- Modern layout with donut charts, scatter visuals, KPI cards, and sleek dark theme
+- DAX for KPIs, comparisons, flags, and YoY logic
+- Time intelligence via calendar table and custom measures
+- Power Query transformations and table joins
+- Geo-visualization using Azure Maps
+- Power Automate to simulate data workflows and trigger responses
+- Advanced formatting: Unicode in KPIs, dynamic titles, slicer interactivity
 
 ---
 
-### 📌 Business Value
+## 📁 Repository Contents
 
-This page turns raw survey data into **actionable business insights**, allowing the company to:
+- `Global_Sales_Analysis.pbix` – full report file
+- `/media` – preview images and GIFs
+- Mock datasets: `Sales_Orders.xlsx`, `Survey_Responses.xlsx`, `Target_2025.xlsx`
+- Documentation on Power Automate and SharePoint setup
 
-- Identify satisfaction trends by product and region  
-- Spot underperforming customer experiences early  
-- Optimize marketing strategies based on source attribution  
-- Align product pricing and value perceptions
+---
 
+## 📈 Business Impact Simulation
+
+This project simulates a realistic business scenario with integrated reporting and workflow:
+
+- **Track performance by region, product, and channel**
+- **Align sales with quarterly targets across continents**
+- **Measure and act on customer satisfaction trends**
+- **Understand the real impact of discounts and returns**
+- **Automate survey flows and connect feedback to sales**
+
+---
+## ⭐ .GIF
 ![Dashboard Preview](media/MS_Forms_Survey.gif)
 
 ---
