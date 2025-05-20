@@ -1,7 +1,7 @@
 # 👋🏻 Hi, I'm Nina
 
 ## 🚀 About Me  
-I'm a **Power BI Developer** and **RPA Analyst** with a strong background in data visualization, automation, and process optimization. My work involves transforming raw data into actionable insights and streamlining business processes with automation tools.  
+I'm a **Power BI Developer** and **Business Analyst** with a strong background in data visualization, automation, and process optimization. My work involves transforming raw data into actionable insights and streamlining business processes with automation tools.  
 
 - 🔹 **Power BI** – Building interactive dashboards, optimizing DAX measures, and working with complex data models.  
 - 🔹 **RPA & Process Analysis** – Designing and documenting automation workflows, identifying inefficiencies, and collaborating with developers to implement solutions.  
